@@ -5,21 +5,33 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 public class Demo {
+
+
     public static WebDriver driver;
+
     @BeforeTest
-    public WebDriver setup(){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\priyankverma\\Downloads\\chromedriver.exe");
+    public void configure() throws IOException {
+        Properties obj = new Properties();
+        FileInputStream input = new FileInputStream("src/test/resources/Data.properties");
+        obj.load(input);
+        String url = obj.getProperty("url");
+        String path = obj.getProperty("driverPath");
+        System.setProperty("webdriver.chrome.driver",path);
         driver= new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().maximize();
-        driver.navigate().to("https://weathershopper.pythonanywhere.com/");
-        return driver;
+        driver.navigate().to(url);
+
     }
+
     @AfterTest
-    public static void closeBrowser() throws InterruptedException {
+    public void closeBrowser() throws InterruptedException {
         Thread.sleep(3000);
         driver.close();
     }
