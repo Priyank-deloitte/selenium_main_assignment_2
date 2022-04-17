@@ -3,10 +3,18 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/priyankverma/IdeaProjects/MainAssignment2Selenium">
         <classes>
-            <class name="Tests.DemoTests">
+            <class name="Tests.WeatherShopperTests">
                 <methods>
                     <include name="getTemperature"/>
+                    <include name="selectCremeType"/>
+                    <include name="readInstruction"/>
+                    <include name="chooseCreme"/>
+                    <include name="verifyCart"/>
+                    <include name="paymentClick"/>
+                    <include name="fillCardDetails"/>
+                    <include name="payToOrder"/>
                 </methods>
+
             </class>
 
 
