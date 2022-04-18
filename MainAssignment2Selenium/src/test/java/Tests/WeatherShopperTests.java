@@ -1,6 +1,8 @@
 package Tests;
 
 import Pages.HomePage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
@@ -22,13 +24,19 @@ public class WeatherShopperTests extends HomePage {
     ArrayList<Integer> sunScreensSPF30Price = new ArrayList<Integer>();
     ArrayList<Integer> aloePrice = new ArrayList<Integer>();
     ArrayList<Integer> almondPrice = new ArrayList<Integer>();
-
-
     ArrayList<String> price = new ArrayList<String>();
+
+
+    public static Logger logger = LogManager.getLogger(WeatherShopperTests.class);
+
+
 
     int temperature = 0;
     @Test(priority = 1)
-    public void getTemperature() throws InterruptedException {
+    public void getTemperature() {
+
+        logger.info("Fetching the Temperature from the provided Website.");
+
         String str = driver.findElement(By.xpath("//*[@id=\"temperature\"]")).getText();
         int i = 0;
 
@@ -53,25 +61,37 @@ public class WeatherShopperTests extends HomePage {
 
     @Test(priority = 2)
     public void selectCremeType() throws InterruptedException {
+
+        logger.info("Selecting the type of the Creme based on the temperature.");
+
         if (temperature > 30){
             driver.findElement(By.xpath("/html/body/div/div[3]/div[2]/a/button")).click();
+            takeScreenshot.screenshots(driver, "Sunscreens");
             Thread.sleep(3000);
 
         }
         else{
 
             driver.findElement(By.xpath("/html/body/div/div[3]/div[1]/a/button")).click();
+            takeScreenshot.screenshots(driver, "Moisturizers");
             Thread.sleep(3000);
         }
     }
     @Test(priority = 3)
     public void readInstruction(){
+
+        logger.info("Reading the instruction about the task from i button.");
+
         driver.findElement(By.xpath("/html/body/div[1]/div[1]/span")).click();
+        takeScreenshot.screenshots(driver, "Instruction");
 
     }
 
     @Test(priority = 4)
     public void chooseCreme(){
+
+        logger.info("Picking the items to add them to the cart");
+
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("window.scrollBy(0,250)","");
         for(int i = 1; i<4;i++) {
@@ -98,6 +118,7 @@ public class WeatherShopperTests extends HomePage {
         }
         System.out.println(cost);
         String headers = driver.findElement(By.xpath("/html/body/div[1]/div[1]")).getText();
+        logger.info(headers);
         System.out.println(headers);
         FindMinimumPrices min = new FindMinimumPrices();
         String minimumPriceBrand;
@@ -128,6 +149,8 @@ public class WeatherShopperTests extends HomePage {
                     driver.findElement(By.xpath("/html/body/div[1]/div[3]/div["+i+"]/button")).click();
                 }
             }
+
+            logger.info(minimumPriceBrand);
             minimumPriceBrand = min.getMinimumBrand(sunScreensSPF50Price, sunScreensSPF50);
             System.out.println(minimumPriceBrand);
             for(int i = 1; i<4;i++) {
@@ -140,6 +163,7 @@ public class WeatherShopperTests extends HomePage {
                     driver.findElement(By.xpath("/html/body/div[1]/div[3]/div["+i+"]/button")).click();
                 }
             }
+            logger.info(minimumPriceBrand);
         }
         else{
             for (int i = 0; i < brandName.size(); i++) {
@@ -164,6 +188,7 @@ public class WeatherShopperTests extends HomePage {
                     driver.findElement(By.xpath("/html/body/div[1]/div[3]/div["+i+"]/button")).click();
                 }
             }
+            logger.info(minimumPriceBrand);
             minimumPriceBrand = min.getMinimumBrand(almondPrice,almond);
             System.out.println(minimumPriceBrand);
             for(int i = 1; i<4;i++) {
@@ -176,22 +201,34 @@ public class WeatherShopperTests extends HomePage {
                     driver.findElement(By.xpath("/html/body/div[1]/div[3]/div["+i+"]/button")).click();
                 }
             }
+            logger.info(minimumPriceBrand);
 
         }
+        takeScreenshot.screenshots(driver, "ItemAdded");
 
     }
     @Test(priority = 5)
     public void verifyCart(){
+
+        logger.info("Verifying the cart after adding the right products.");
+
         driver.findElement(By.xpath("/html/body/nav/ul/button")).click();
+        takeScreenshot.screenshots(driver, "CheckOrder");
     }
     @Test (priority = 6)
     public void paymentClick(){
+        logger.info("Clicking on 'Pay with Card' to make the payment with the card.");
+
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/button")).click();
+        takeScreenshot.screenshots(driver, "CardDetailsForm");
         driver.switchTo().frame(driver.findElement(By.xpath("/html/body/iframe")));
     }
 
     @Test(priority = 7)
     public void fillCardDetails() throws IOException {
+
+        logger.info("Filling the details required to make the payment.");
+
         Properties prop = new Properties();
         FileInputStream obj = new FileInputStream("src/test/resources/Data.properties");
         prop.load(obj);
@@ -204,20 +241,39 @@ public class WeatherShopperTests extends HomePage {
         String year = prop.getProperty("year");
         String cvv = prop.getProperty("cvv");
         String zipCode = prop.getProperty("zipCode");
+
+        logger.info("Entering the email.");
         driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys(email);
+        logger.info(email);
+
+        logger.info("Entering Card Number.");
         driver.findElement(By.xpath("//*[@id=\"card_number\"]")).sendKeys(cardNumber1);
         driver.findElement(By.xpath("//*[@id=\"card_number\"]")).sendKeys(cardNumber2);
         driver.findElement(By.xpath("//*[@id=\"card_number\"]")).sendKeys(cardNumber3);
         driver.findElement(By.xpath("//*[@id=\"card_number\"]")).sendKeys(cardNumber4);
+        logger.info(cardNumber1+cardNumber2+cardNumber3+cardNumber4);
+
+        logger.info("Entering the expiry.");
         driver.findElement(By.xpath("//*[@id=\"cc-exp\"]")).sendKeys(month);
         driver.findElement(By.xpath("//*[@id=\"cc-exp\"]")).sendKeys(year);
+        logger.info(month+"/"+year);
+
+        logger.info("Entering the cvv.");
         driver.findElement(By.xpath("//*[@id=\"cc-csc\"]")).sendKeys(cvv);
+        logger.info(cvv);
+
+        logger.info("Entering the postal code");
         driver.findElement(By.xpath("//*[@id=\"billing-zip\"]")).sendKeys(zipCode);
+        logger.info(zipCode);
+        takeScreenshot.screenshots(driver, "filledDetails");
     }
     @Test(priority = 8)
     public void payToOrder() throws InterruptedException {
-        driver.findElement(By.xpath("//*[@id=\"submitButton\"]")).click();
-    }
 
+        logger.info("Clicking on 'Pay' button to make the payment.");
+        driver.findElement(By.xpath("//*[@id=\"submitButton\"]")).click();
+        Thread.sleep(3000);
+        logger.info("Process Success!");
+    }
 
 }

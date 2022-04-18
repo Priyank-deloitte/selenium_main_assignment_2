@@ -1,0 +1,90 @@
+2022-04-18 09:31:48.881 INFO [main] [Tests.WeatherShopperTests.getTemperature(WeatherShopperTests.java:38)] - Fetching the Temperature from the provided Website.
+2022-04-18 09:31:48.912 INFO [main] [Tests.WeatherShopperTests.selectCremeType(WeatherShopperTests.java:65)] - Selecting the type of the Creme based on the temperature.
+2022-04-18 10:35:50.842 INFO [main] [Tests.WeatherShopperTests.getTemperature(WeatherShopperTests.java:38)] - Fetching the Temperature from the provided Website.
+2022-04-18 10:35:50.903 INFO [main] [Tests.WeatherShopperTests.selectCremeType(WeatherShopperTests.java:65)] - Selecting the type of the Creme based on the temperature.
+2022-04-18 10:35:56.627 INFO [main] [Tests.WeatherShopperTests.readInstruction(WeatherShopperTests.java:81)] - Reading the instruction about the task from i button.
+2022-04-18 10:35:56.818 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:90)] - Picking the items to add them to the cart
+2022-04-18 10:35:57.319 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:118)] - Sunscreens
+2022-04-18 10:35:57.528 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:150)] - Vassily Brilliant SPF-30
+2022-04-18 10:35:57.744 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:163)] - Akiba Amazing SPF-50
+2022-04-18 10:35:57.746 INFO [main] [Tests.WeatherShopperTests.verifyCart(WeatherShopperTests.java:209)] - Verifying the cart after adding the right products.
+2022-04-18 10:36:02.714 INFO [main] [Tests.WeatherShopperTests.paymentClick(WeatherShopperTests.java:215)] - Clicking on 'Pay with Card' to make the payment with the card.
+2022-04-18 10:36:02.841 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:224)] - Filling the details required to make the payment.
+2022-04-18 10:36:02.842 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:239)] - Entering the email.
+2022-04-18 10:36:03.108 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:241)] - diva987@yahoo.com
+2022-04-18 10:36:03.109 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:243)] - Entering Card Number.
+2022-04-18 10:36:03.367 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:248)] - 5200828282828210
+2022-04-18 10:36:03.368 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:250)] - Entering the expiry.
+2022-04-18 10:36:03.513 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:253)] - 09/28
+2022-04-18 10:36:03.513 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:255)] - Entering the cvv.
+2022-04-18 10:36:03.603 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:257)] - 033
+2022-04-18 10:36:03.603 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:259)] - Entering the postal code
+2022-04-18 10:36:03.697 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:261)] - 273158
+2022-04-18 10:36:03.699 INFO [main] [Tests.WeatherShopperTests.payToOrder(WeatherShopperTests.java:265)] - Clicking on 'Pay' button to make the payment.
+2022-04-18 10:36:03.823 INFO [main] [Tests.WeatherShopperTests.payToOrder(WeatherShopperTests.java:267)] - Process Success!
+2022-04-18 11:05:31.346 INFO [main] [Tests.WeatherShopperTests.getTemperature(WeatherShopperTests.java:38)] - Fetching the Temperature from the provided Website.
+2022-04-18 11:05:31.416 INFO [main] [Tests.WeatherShopperTests.selectCremeType(WeatherShopperTests.java:65)] - Selecting the type of the Creme based on the temperature.
+2022-04-18 11:05:36.317 INFO [main] [Tests.WeatherShopperTests.readInstruction(WeatherShopperTests.java:81)] - Reading the instruction about the task from i button.
+2022-04-18 11:05:36.461 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:90)] - Picking the items to add them to the cart
+2022-04-18 11:05:36.991 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:118)] - Sunscreens
+2022-04-18 11:05:37.199 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:150)] - Vassily Brilliant SPF-30
+2022-04-18 11:05:37.409 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:163)] - Akiba Amazing SPF-50
+2022-04-18 11:05:37.410 INFO [main] [Tests.WeatherShopperTests.verifyCart(WeatherShopperTests.java:209)] - Verifying the cart after adding the right products.
+2022-04-18 11:05:41.302 INFO [main] [Tests.WeatherShopperTests.paymentClick(WeatherShopperTests.java:215)] - Clicking on 'Pay with Card' to make the payment with the card.
+2022-04-18 11:05:41.434 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:224)] - Filling the details required to make the payment.
+2022-04-18 11:05:41.436 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:239)] - Entering the email.
+2022-04-18 11:05:41.734 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:241)] - diva987@yahoo.com
+2022-04-18 11:05:41.734 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:243)] - Entering Card Number.
+2022-04-18 11:05:42.010 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:248)] - 5200828282828210
+2022-04-18 11:05:42.010 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:250)] - Entering the expiry.
+2022-04-18 11:05:42.168 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:253)] - 09/28
+2022-04-18 11:05:42.168 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:255)] - Entering the cvv.
+2022-04-18 11:05:42.259 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:257)] - 033
+2022-04-18 11:05:42.260 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:259)] - Entering the postal code
+2022-04-18 11:05:42.356 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:261)] - 273158
+2022-04-18 11:05:42.358 INFO [main] [Tests.WeatherShopperTests.payToOrder(WeatherShopperTests.java:265)] - Clicking on 'Pay' button to make the payment.
+2022-04-18 11:05:43.410 INFO [main] [Tests.WeatherShopperTests.payToOrder(WeatherShopperTests.java:268)] - Process Success!
+2022-04-18 11:32:22.591 INFO [main] [Tests.WeatherShopperTests.getTemperature(WeatherShopperTests.java:38)] - Fetching the Temperature from the provided Website.
+2022-04-18 11:32:22.649 INFO [main] [Tests.WeatherShopperTests.selectCremeType(WeatherShopperTests.java:65)] - Selecting the type of the Creme based on the temperature.
+2022-04-18 11:32:29.621 INFO [main] [Tests.WeatherShopperTests.readInstruction(WeatherShopperTests.java:83)] - Reading the instruction about the task from i button.
+2022-04-18 11:32:30.173 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:93)] - Picking the items to add them to the cart
+2022-04-18 11:32:30.692 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:121)] - Sunscreens
+2022-04-18 11:32:30.901 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:153)] - Vladimir Sun Expert SPF-30
+2022-04-18 11:32:31.103 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:166)] - Akiba Amazing SPF-50
+2022-04-18 11:32:31.394 INFO [main] [Tests.WeatherShopperTests.verifyCart(WeatherShopperTests.java:213)] - Verifying the cart after adding the right products.
+2022-04-18 11:32:35.756 INFO [main] [Tests.WeatherShopperTests.paymentClick(WeatherShopperTests.java:220)] - Clicking on 'Pay with Card' to make the payment with the card.
+2022-04-18 11:32:36.346 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:230)] - Filling the details required to make the payment.
+2022-04-18 11:32:36.347 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:245)] - Entering the email.
+2022-04-18 11:32:36.468 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:247)] - diva987@yahoo.com
+2022-04-18 11:32:36.469 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:249)] - Entering Card Number.
+2022-04-18 11:32:36.731 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:254)] - 5200828282828210
+2022-04-18 11:32:36.731 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:256)] - Entering the expiry.
+2022-04-18 11:32:36.875 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:259)] - 09/28
+2022-04-18 11:32:36.875 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:261)] - Entering the cvv.
+2022-04-18 11:32:36.962 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:263)] - 033
+2022-04-18 11:32:36.963 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:265)] - Entering the postal code
+2022-04-18 11:32:37.071 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:267)] - 273158
+2022-04-18 11:32:37.728 INFO [main] [Tests.WeatherShopperTests.payToOrder(WeatherShopperTests.java:273)] - Clicking on 'Pay' button to make the payment.
+2022-04-18 11:32:41.264 INFO [main] [Tests.WeatherShopperTests.payToOrder(WeatherShopperTests.java:277)] - Process Success!
+2022-04-18 11:35:17.510 INFO [main] [Tests.WeatherShopperTests.getTemperature(WeatherShopperTests.java:38)] - Fetching the Temperature from the provided Website.
+2022-04-18 11:35:17.580 INFO [main] [Tests.WeatherShopperTests.selectCremeType(WeatherShopperTests.java:65)] - Selecting the type of the Creme based on the temperature.
+2022-04-18 11:35:22.765 INFO [main] [Tests.WeatherShopperTests.readInstruction(WeatherShopperTests.java:83)] - Reading the instruction about the task from i button.
+2022-04-18 11:35:23.335 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:93)] - Picking the items to add them to the cart
+2022-04-18 11:35:23.810 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:121)] - Moisturizers
+2022-04-18 11:35:24.003 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:191)] - Tigran Aloe Isolani
+2022-04-18 11:35:24.198 INFO [main] [Tests.WeatherShopperTests.chooseCreme(WeatherShopperTests.java:204)] - Boris Almond and Honey
+2022-04-18 11:35:24.473 INFO [main] [Tests.WeatherShopperTests.verifyCart(WeatherShopperTests.java:213)] - Verifying the cart after adding the right products.
+2022-04-18 11:35:28.200 INFO [main] [Tests.WeatherShopperTests.paymentClick(WeatherShopperTests.java:220)] - Clicking on 'Pay with Card' to make the payment with the card.
+2022-04-18 11:35:28.748 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:230)] - Filling the details required to make the payment.
+2022-04-18 11:35:28.748 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:245)] - Entering the email.
+2022-04-18 11:35:28.860 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:247)] - diva987@yahoo.com
+2022-04-18 11:35:28.860 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:249)] - Entering Card Number.
+2022-04-18 11:35:29.096 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:254)] - 5200828282828210
+2022-04-18 11:35:29.096 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:256)] - Entering the expiry.
+2022-04-18 11:35:29.229 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:259)] - 09/28
+2022-04-18 11:35:29.229 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:261)] - Entering the cvv.
+2022-04-18 11:35:29.312 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:263)] - 033
+2022-04-18 11:35:29.312 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:265)] - Entering the postal code
+2022-04-18 11:35:29.394 INFO [main] [Tests.WeatherShopperTests.fillCardDetails(WeatherShopperTests.java:267)] - 273158
+2022-04-18 11:35:30.080 INFO [main] [Tests.WeatherShopperTests.payToOrder(WeatherShopperTests.java:273)] - Clicking on 'Pay' button to make the payment.
+2022-04-18 11:35:33.217 INFO [main] [Tests.WeatherShopperTests.payToOrder(WeatherShopperTests.java:276)] - Process Success!

@@ -1,5 +1,7 @@
 package Pages;
 
+import Tests.WeatherShopperTests;
+import Tests.takeScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -25,12 +27,14 @@ public class HomePage {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().maximize();
         driver.navigate().to(url);
+        takeScreenshot.screenshots(driver, "HomePage");
 
     }
 
     @AfterTest
     public void closeBrowser() throws InterruptedException {
         Thread.sleep(3000);
+        takeScreenshot.screenshots(driver, "Process Successful");
         driver.close();
     }
 }
